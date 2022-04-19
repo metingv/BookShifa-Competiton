@@ -1,0 +1,21 @@
+@import './formul.scss';
+
+.App{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 30px;
+
+    .content1{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 15px;
+    }
+    .content2{
+        margin-top: 15px;
+    }
+}
+
+
+// @media screen and (max-width: 500px) {
+//     width: 130px;
+//   }

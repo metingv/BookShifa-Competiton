@@ -1,0 +1,75 @@
+@import './formul.scss';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.Component2 {
+    width: 600px;
+    background: #F5F5F7;
+    border-radius: 14px;
+    @include displayflex($fd: row, $ai: center, $jc: space-between);
+    margin-top: 16px;
+    padding: 10px;
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .img1div {
+        background: #FFFFFF;
+        border-radius: 12px;
+        width: 50px;
+        height: 50px;
+
+        @include displayflex($fd: row, $ai: center, $jc: center);
+
+        img {
+            width: 31px;
+            height: 25px;
+        }
+    }
+
+    .img2 {
+        margin-right: 10px;
+    }
+
+    button {
+        height: 36px;
+        width: 102px;
+        background: #000000;
+        border-radius: 8px;
+        border: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        color: #fff;
+        line-height: 15px;
+    }
+
+    .surcle {
+        @include displayflex($fd: column, $ai: center, $jc: center);
+        border: 2px solid #000000;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .spanbox {
+        @include displayflex($fd: column, $ai: space-between, $jc: space-between);
+        height: 50px;
+        font-family: Roboto;
+
+        span:first-child {
+
+            font-family: 'Baloo Bhai 2', cursive ;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+}
